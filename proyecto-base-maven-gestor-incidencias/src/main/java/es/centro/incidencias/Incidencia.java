@@ -77,7 +77,6 @@ public final class Incidencia {
      * Obtiene una cadena de caracteres
      * @return  la comprobación de coincidencia entre una incidenia y otra
      * **/
-
     public boolean coincideCon(String texto) {
         String criterio = texto.toLowerCase(Locale.ROOT);
         return id.toLowerCase(Locale.ROOT).contains(criterio)
