@@ -3,7 +3,7 @@ package es.centro.incidencias;
 import java.util.Locale;
 /**
  * Representa un incidencia
- * contien informacion especifica como: id, titulo, prioriad, abierta
+ * contiene informacion especifica como: id, titulo, prioriad, abierta
  * @author Rosiangie.nicol.orti
  * @version 1.0.0
  * */
