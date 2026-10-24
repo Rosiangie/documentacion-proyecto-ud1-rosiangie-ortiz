@@ -6,7 +6,7 @@
 
 ## Descripción general
 
-**Gestor de incidencias** es una aplicación desarrollada en Java diseñada para consultar las incidencias de in centro por distintos atributos de estas como su id o situacion. 
+**Gestor de incidencias** es una aplicación desarrollada en Java diseñada para consultar las incidencias de un centro por distintos atributos de estas como su ID o situación. 
 
 El código está estructurado de manera modular y cuenta con documentación Javadoc completa publicada y accesible en línea.
 
@@ -14,25 +14,42 @@ El código está estructurado de manera modular y cuenta con documentación Java
 
 ## Documentación y Enlaces
 
-* **Documentación API (Javadoc):** [Ver Javadoc en GitHub Pages](https://rosiangie.github.io/documentacion-proyecto-ud1-rosiangie-ortiz/)
-**Repositorio oficial:** [GitHub Repository](https://github.com/Rosiangie/documentacion-proyecto-ud1-rosiangie-ortiz.git)
+* **Documentación API (Javadoc):** [Ver Javadoc en GitHub Pages](https://Rosiangie.github.io/documentacion-proyecto-ud1-rosiangie-ortiz/)
+* **Repositorio oficial:** [GitHub Repository](https://github.com/Rosiangie/documentacion-proyecto-ud1-rosiangie-ortiz.git)
 
 ---
 
-##  Requisitos previos
+## Versión de Java
 
-Para compilar y ejecutar este proyecto de forma local, necesitarás disponer de:
-
-* **Java Development Kit (JDK):** Versión 25 o superior
-* **Gestor de construcción:** Maven
-* **Git:** Para clonar el repositorio
+* **Java Development Kit (JDK):** Versión 25
 
 ---
 
-##  Compilación y Ejecución
+## Funcionalidades de la aplicación
 
-Sigue estos pasos desde la consola/terminal para poner en marcha el proyecto:
+La aplicación permite realizar las siguientes acciones:
+* **Búsqueda por ID:** Permite buscar y localizar una incidencia específica dentro de la lista utilizando su identificador único.
+* **Consulta de incidencias:** Permite obtener y listar los detalles de las incidencias registradas.
+* **Coincidencias por texto:** Evalúa si una incidencia coincide con un texto de búsqueda determinado en sus atributos.
+* **Control de excepciones:** Gestiona de forma personalizada los errores cuando se intenta buscar una incidencia que no existe en el sistema (`IncidenciaNoEncontradaException`).
 
-### 1. Clonar el repositorio
-```bash
-git clone https://github.com/Rosiangie/documentacion-proyecto-ud1-rosiangie-ortiz.git
+---
+
+## Clases Principales
+
+| Clase | Responsabilidad General |
+| :--- | :--- |
+| **`GestorIncidencias`** | Administra la colección/lista de incidencias y centraliza la lógica de búsqueda y obtención de elementos. |
+| **`Incidencia`** | Representa el modelo de datos de una incidencia individual y gestiona la lógica de coincidencia de textos. |
+| **`IncidenciaNoEncontradaException`** | Excepción personalizada lanzada cuando una consulta por ID no devuelve resultados válidos. |
+
+---
+
+##  Estructura de Archivos
+
+```text
+proyecto-base-maven-gestor-incidencias/
+ ├── src/                           # Código fuente de la aplicación (main y test)
+ │    └── main/java/es/centro/incidencias/
+ ├── pom.xml                        # Archivo de configuración y dependencias de Maven
+ └── README.md                      # Documentación principal del proyecto
