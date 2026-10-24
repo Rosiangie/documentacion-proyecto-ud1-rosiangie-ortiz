@@ -1,4 +1,4 @@
-# 🚀 Gestor de incidencias
+# Gestor de incidencias
 
 > Aplicación de consulta de gestor de incidencias.
 
@@ -19,7 +19,7 @@ El código está estructurado de manera modular y cuenta con documentación Java
 
 ---
 
-## 🛠️ Requisitos previos
+##  Requisitos previos
 
 Para compilar y ejecutar este proyecto de forma local, necesitarás disponer de:
 
@@ -29,7 +29,7 @@ Para compilar y ejecutar este proyecto de forma local, necesitarás disponer de:
 
 ---
 
-## 🚀 Compilación y Ejecución
+##  Compilación y Ejecución
 
 Sigue estos pasos desde la consola/terminal para poner en marcha el proyecto:
 
