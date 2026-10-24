@@ -75,6 +75,7 @@ public final class Incidencia {
     }
     /**
      * Obtiene una cadena de caracteres
+     * @param texto una cadena de caracteres que representa la coincidencia entre un instancia y otra
      * @return  la comprobación de coincidencia entre una incidenia y otra
      * **/
     public boolean coincideCon(String texto) {

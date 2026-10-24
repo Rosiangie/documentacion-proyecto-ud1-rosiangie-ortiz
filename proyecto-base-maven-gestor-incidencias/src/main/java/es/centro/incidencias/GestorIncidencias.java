@@ -64,7 +64,7 @@ public final class GestorIncidencias {
     /**
      * Metodo que se encarga de buscar por id llamando a la funcion burcarPorId
      * @param id atributo String que representa el id de una incidencia
-     * return un lista con los elementos que coincidan
+     * @return un lista con los elementos que coincidan
      * @deprecated buscarPorId
      * @throws IllegalArgumentException si no encuentra un councidencia
      * **/
