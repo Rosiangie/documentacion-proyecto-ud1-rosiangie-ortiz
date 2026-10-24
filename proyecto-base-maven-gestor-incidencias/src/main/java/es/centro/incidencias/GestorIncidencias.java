@@ -12,7 +12,7 @@ public final class GestorIncidencias {
     private final List<Incidencia> incidencias;
 /**
  * Crea un Objeto gestor de incidencias que inicializa una lista objetos de tipo incidencia
- * @return lista de incidencias creada
+ *
  * **/
     public GestorIncidencias() {
         incidencias = List.of(
@@ -52,6 +52,7 @@ public final class GestorIncidencias {
      * Metodo que se encarga buscar la incidencia dentro de la lista cuyo id coincida con el atributo ide recibido
      * @param id atributo String que representa el id de una incidencia
      * @return elemento lista de las coincidencias
+     * @throws IncidenciaNoEncontradaException si no se encuentra ninguna incidencia con el id proporcionado
      * **/
 
     public Incidencia buscarPorId(String id) throws IncidenciaNoEncontradaException {
@@ -65,7 +66,7 @@ public final class GestorIncidencias {
      * @param id atributo String que representa el id de una incidencia
      * return un lista con los elementos que coincidan
      * @deprecated buscarPorId
-     * @thorws IllegalArgumentException si no encuentra un councidencia
+     * @throws IllegalArgumentException si no encuentra un councidencia
      * **/
     @Deprecated(since = "1.0.0", forRemoval = false)
     public Incidencia obtenerIncidencia(String id) {

@@ -7,7 +7,7 @@ package es.centro.incidencias;
 public class IncidenciaNoEncontradaException extends Exception {
 
     /**
-     * @Crea uina nueva excepcion con el identificador de la incidencia
+     * Crea uina nueva excepcion con el identificador de la incidencia
      * @param id es el identificador unico de la incidencia que no se ha encontrado*/
 
 
